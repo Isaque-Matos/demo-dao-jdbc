@@ -24,6 +24,12 @@ public class Program2 {
 		System.out.println("=== TEST 3: department delete ===");
 		departmentDao.deleteById(6);
 		System.out.println("ID deleted!");
+		
+		System.out.println("=== TEST 4: department update ===");
+		dep = departmentDao.findById(5);
+		dep.setName("D2");
+		departmentDao.update(dep);
+		System.out.println("Update completed");
 	}
 
 }
