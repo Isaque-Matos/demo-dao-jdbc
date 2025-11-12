@@ -15,10 +15,15 @@ public class Program2 {
 		Department dep = departmentDao.findById(3);
 		System.out.println(dep);
 		
-		System.out.println("=== TEST 2: department insert ===");
-		Department newDepartment = new Department(5,"D1");
-		departmentDao.insert(newDepartment);
-		System.out.println("\nInserted! New id = " + newDepartment.getId());
+		/*
+		 * System.out.println("=== TEST 2: department insert ==="); Department
+		 * newDepartment = new Department(5,"D1"); departmentDao.insert(newDepartment);
+		 * System.out.println("\nInserted! New id = " + newDepartment.getId());
+		 */
+		
+		System.out.println("=== TEST 3: department delete ===");
+		departmentDao.deleteById(6);
+		System.out.println("ID deleted!");
 	}
 
 }
